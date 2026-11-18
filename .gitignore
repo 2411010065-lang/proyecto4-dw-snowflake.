@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# dbt & Python
+venv/
+.venv/
+__pycache__/
+dbt_packages/
+target/
+logs/
+profiles.yml
+.env

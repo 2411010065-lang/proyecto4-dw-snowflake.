@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: jne_oltp_source
+    database: PROYECTO4_DW
+    schema: BRONZE
+    quoting:
+      database: true
+      schema: true
+      identifier: true
+    tables:
+      - name: actas_electorales
+        identifier: ActasElectorales
+      - name: asistencia_votantes
+        identifier: AsistenciaVotantes
+      - name: candidatos
+        identifier: Candidatos
+      - name: cargos
+        identifier: Cargos
+      - name: ciudadanos
+        identifier: Ciudadanos
+      - name: impugnaciones_actas
+        identifier: ImpugnacionesActas
+      - name: locales_votacion
+        identifier: LocalesVotacion
+      - name: mesas_votacion
+        identifier: MesasVotacion
+      - name: miembros_mesa
+        identifier: MiembrosMesa
+      - name: partidos_politicos
+        identifier: PartidosPoliticos
+      - name: procesos_electorales
+        identifier: ProcesosElectorales
+      - name: tipo_incidencias
+        identifier: TipoIncidencias
+      - name: tipo_procesos
+        identifier: TipoProcesos
+      - name: ubigeo
+        identifier: Ubigeo
+      - name: votos_por_partido
+        identifier: VotosPorPartido

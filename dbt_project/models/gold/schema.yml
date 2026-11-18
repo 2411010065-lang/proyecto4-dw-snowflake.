@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_partido
+    columns:
+      - name: id_partido
+        data_tests:
+          - unique
+          - not_null
+  - name: dim_proceso
+    columns:
+      - name: id_proceso
+        data_tests:
+          - unique
+          - not_null
+  - name: dim_ubicacion_mesa
+    columns:
+      - name: id_mesa
+        data_tests:
+          - unique
+          - not_null
+  - name: fact_resultados_electorales
+    columns:
+      - name: id_detalle_votos
+        data_tests:
+          - unique
+          - not_null
